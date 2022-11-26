@@ -5,6 +5,7 @@ public class Pensionista extends Trabajador{
     public Pensionista(String nombre, String nSS, Double salario){
         super(nombre, nSS, salario);
     }
-
+    
+    @Override
     public void incrementar(){salario = salario * 1.04;}
 }

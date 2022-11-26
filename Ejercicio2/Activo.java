@@ -6,6 +6,6 @@ public class Activo extends Trabajador{
         super(nombre,nSS, salario);
     }
 
+    @Override
     public void incrementar(){salario = salario * 1.02;}
-
 }

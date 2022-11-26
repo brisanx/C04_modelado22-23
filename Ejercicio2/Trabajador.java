@@ -7,14 +7,13 @@ public abstract class Trabajador {
     protected Double salario;
 
     public Trabajador(String nombre, String nSS, Double salario) {
-        //Asserts
         assert(nombre!=null);
         assert(nSS!=null);
         assert(salario > 0);
         
-        this.nombre = nombre;
-        this.numeroSeguridadSocial = nSS;
-        this.salario = salario;
+        setNombre(nombre);
+        setNumeroSeguridadSocial(nSS);
+        setNomina(salario);
     }
 
     public double nomina(){return this.salario;}
